@@ -1,7 +1,4 @@
-﻿using System.ComponentModel;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-class Program
+﻿class Program
 {
     public static void Main()
     {
