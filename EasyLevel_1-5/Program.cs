@@ -70,16 +70,16 @@
 
         #region 5. Question
 
-        // Write a program that finds the sum of odd numbers between 1 and 50.
+        //// Write a program that finds the sum of odd numbers between 1 and 50.
 
-        int result = 0;
+        //int result = 0;
 
-        for (int i = 1; i <= 50; i = i + 2)
-        {
-            result += i;
-        }
+        //for (int i = 1; i <= 50; i = i + 2)
+        //{
+        //    result += i;
+        //}
 
-        Console.WriteLine(result);
+        //Console.WriteLine(result);
 
         #endregion
 
