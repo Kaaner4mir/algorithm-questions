@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-class Program
+﻿class Program
 {
     static void Main()
     {
@@ -62,24 +60,29 @@ class Program
         #region Question 5
         // 5. Check whether the entered number is prime.
 
-        //Console.Write("Enter the number you want to check whether prime or not: ");
-        //int number = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter the number you want to check whether prime or not: ");
+        int number = Convert.ToInt32(Console.ReadLine());
 
-        //bool isPrime = true;
+        bool isPrime = true;
 
-        //for (int i = 2; i <= Math.Sqrt(number); i++)
-        //{
-        //    if (number % i == 0)
-        //    {
-        //        isPrime = false;
-        //        break;
-        //    }
-        //}
+        if (number < 2)
+            isPrime = false;
+        else
+        {
+            for (int i = 2; i <= Math.Sqrt(number); i++)
+            {
+                if (number % i == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
 
-        //if (isPrime)
-        //    Console.WriteLine($"{number} is a prime number.");
-        //else
-        //    Console.WriteLine($"{number} is not a prime number.");
+        if (isPrime)
+            Console.WriteLine($"{number} is a prime number.");
+        else
+            Console.WriteLine($"{number} is not a prime number.");
         #endregion
 
         #region Question 6
